@@ -1,0 +1,128 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ---------------end of css reset-----------------------------*/
+
+body{
+    background-color: rgb(233, 234, 235);
+    
+}
+/*--------------------------------------------------*/
+/*---------------- Banner / Top---------------------*/
+/*--------------------------------------------------*/
+#banner h1{
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    margin: 1em;
+    font-size: 4em;
+   
+}
+
+.bigBold{
+font-weight: 800;
+}
+
+#banner ul, a{
+display: flex;
+justify-content: space-evenly;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+
+
+/*--------------------------------------------------*/
+/*----------------            ----------------------*/
+/*--------------------------------------------------*/
+
+h2{        
+    margin: 2em auto;       
+    font-size: 2.5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+h2:before,
+h2:after{
+    content: '';    
+    width: 10em;    
+    height: 1px;
+    margin: 0 1em;
+    background: #040000;  
+    display: inline-block;
+    vertical-align: middle;   
+    flex: 1;
+}
+
+li{
+font-size: 1.2em;
+padding:0.3em;
+}
+
+.experience-header{
+display: flex;
+justify-content: space-between;
+margin: 2em;
+margin-bottom: 1em;
+font-size: 1.3em;
+}
+
+#skills{
+list-style-type: none;
+display: flex;
+justify-content: space-evenly;
+font-size: 1.1em;
+}
+
+#professional h3:first-of-type{
+margin-top: 2em;    
+}
+
+#professional{
+    margin-bottom: 5em;
+}
