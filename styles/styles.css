@@ -48,11 +48,10 @@ table {
 /* ---------------end of css reset-----------------------------*/
 
 body {
-    background-image: url('/content/nordwood-themes-9a58YsGiTPk-unsplash.jpg');
+    background-image: url('../content/nordwood-themes-9a58YsGiTPk-unsplash.jpg');
     background-repeat: repeat;
     background-attachment: scroll; 
     background-size:contain;
-
   }
 
 .Yellowtail{
