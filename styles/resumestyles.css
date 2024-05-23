@@ -48,8 +48,7 @@ table {
 /* ---------------end of css reset-----------------------------*/
 
 body{
-    background-color: rgb(233, 234, 235);
-    
+    background-color: white;
 }
 /*--------------------------------------------------*/
 /*---------------- Banner / Top---------------------*/
@@ -125,4 +124,53 @@ margin-top: 2em;
 
 #professional{
     margin-bottom: 5em;
+}
+
+
+@media (prefers-color-scheme: dark) {
+ 
+    h1,
+    p,
+    div,li,ul,a,h2,h3{
+        color: white;
+    }
+
+    div,body {
+        background-color: rgb(28, 28, 28);
+    }
+    h2:before,
+h2:after{
+    content: '';    
+    width: 10em;    
+    height: 1px;
+    margin: 0 1em;
+    background: #ffffff;  
+    display: inline-block;
+    vertical-align: middle;   
+    flex: 1;
+}
+}
+
+@media (prefers-color-scheme: light) {
+
+    h1,
+    p,
+    div,li,ul,a,h2,h3{
+        color: rgb(0, 0, 0);
+    }
+
+    div,body,.line {
+        background-color: white;
+    }
+    h2:before,
+h2:after{
+    content: '';    
+    width: 10em;    
+    height: 1px;
+    margin: 0 1em;
+    background: #000000;  
+    display: inline-block;
+    vertical-align: middle;   
+    flex: 1;
+}
 }
