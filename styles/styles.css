@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+
 }
 
 blockquote, q {
@@ -50,7 +51,8 @@ body {
     background-image: url('/content/nordwood-themes-9a58YsGiTPk-unsplash.jpg');
     background-repeat: repeat;
     background-attachment: scroll; 
-    background-size: cover;
+    background-size:contain;
+
   }
 
 .Yellowtail{
@@ -59,7 +61,7 @@ body {
 
 h1{
     font-family: "Dancing Script",cursive;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
     color: white;
 }
@@ -78,8 +80,8 @@ background-color: rgba(0, 0, 0, 0.978);
 display: flex;
 align-items: center;
 justify-content: space-between;
-padding-bottom: 2em;
-padding-top: 2em;
+padding-bottom: 0.5em;
+padding-top: 0.5em;
 box-shadow:
 /* White glow */
 0 0 7px #edcc3a,
@@ -97,20 +99,10 @@ margin-left: 50px;
 
 nav a{
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 0.8em;
     color: rgb(255, 255, 255);
 }
 
-.lightbox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    width: 5em;
-    border-radius: 4em;
-    height:5em;
-
-}
 
 .lightbox i{
     text-shadow:
@@ -121,12 +113,13 @@ nav a{
 0 0 4em orange,
 0 0 4em orange;
 animation: breathe 1.5s infinite linear;
-
+font-size: 0.5em;
 }
 
 .lightbox i:hover{
     animation: none;
-    transform: scale(1.4);
+    transform: scale(1.3);
+    text-shadow: none;
 }
 
 @keyframes breathe{
@@ -142,11 +135,21 @@ animation: breathe 1.5s infinite linear;
 }
 
 
-#profile-photo-card{
-    border-radius: 10em;
-    width: 18em;
-    height: 18em;
+#profile-photo-card {
+    border-radius: 2em;
+    width: 15em;
+    height: 25em;
     overflow: hidden;
+    border: 0.4em solid rgb(0, 0, 0);
+    position: relative;
+}
+
+#profilePhoto {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center top;
+    
 }
 
 p{
@@ -156,12 +159,13 @@ p{
     margin-top: 10em;
     display: flex;
     align-items:center ;
-    justify-content: space-evenly;
-    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
     width: 80em;
     margin:10em auto;
     border-radius: 4em;
     padding: 5em;
+    gap: 5em;
+    
 }
 
 .navright{
@@ -180,12 +184,15 @@ margin-right:2em;
 }
 
 .textcard {
-    width: 50em;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30em;
 }
 
 .textcard h2, .textcard p {
-margin: 1em;
+margin-bottom: 1em;
 }
 
 .poetsen-one-regular {
@@ -200,14 +207,24 @@ margin: 1em;
     font-style: normal;
   }
 
+  #projectTitle{
+    margin: auto;
+    margin-top: 7em;
+  }
+
+
   .neontext {
     text-align: center;
-font-size: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
     font-weight: 0;
     color: white;
     border: 0.2rem solid #fff;
     border-radius: 2rem;
-    padding: 1em;
+    width: 6em;
+    height: 3em;
     box-shadow:inset
     0 0 20px #bc13fe,
     0 0 7px #fff,
@@ -225,13 +242,6 @@ font-size: 6em;
     0 0 151px #bc13fe;
       }
         
-.neontext:hover{
-animation: none;
-text-shadow:none;
-box-shadow:none;
-color: rgba(170, 168, 168, 0.837);
-}
-
 
 
 
@@ -267,4 +277,44 @@ color: rgba(170, 168, 168, 0.837);
     box-shadow: none;
     text-shadow: none;
     animation: none;
+}
+
+/*-------------------------------------------------------------------------*/
+/*------------------------PROJECTS SECTION---------------------------------*/
+/*-------------------------------------------------------------------------*/
+
+#dsavideo{
+    border-radius: 2em;
+    margin-left: 4em;
+    width: 20em;
+    height: 20em;
+}
+
+#projectsContainer{
+  margin: 0 auto;
+  width: fit-content;
+
+}
+
+.projects h2{
+    font-size: 2em;
+}
+
+.projects h2, .projects p {
+    color: white;
+}
+
+.projectBox{
+width: 70vw;
+height: 20em;
+margin-top: 11em;
+padding: 4em;
+background-color: rgba(0, 0, 0, 0.668);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+border-radius: 2em;
+
 }
