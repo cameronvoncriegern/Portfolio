@@ -305,7 +305,7 @@ margin-bottom: 1em;
 
 .projectBox{
 width: 70vw;
-height: 20em;
+height: 30em;
 margin-top: 11em;
 padding: 4em;
 background-color: rgba(0, 0, 0, 0.668);
@@ -315,5 +315,8 @@ align-items: center;
 justify-content: center;
 text-align: center;
 border-radius: 2em;
+}
 
+.projectBox h2, .projectBox img , .projectBox p{
+    margin: 1em;
 }
